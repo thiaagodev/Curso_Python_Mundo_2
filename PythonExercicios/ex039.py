@@ -5,9 +5,9 @@ ano_atual = date.today().year
 idade = ano_atual - ano
 
 if idade < 18:
-    print('Você tem {} anos, portanto ainda vai se alistar ao serviço militar.'.format(idade))
-    print('Faltam {} anos para você se alistar'.format((idade - 18) * -1))
+    print(f'Você tem {idade} anos, portanto ainda vai se alistar ao serviço militar.')
+    print(f'Faltam {(idade - 18) * -1} anos para você se alistar, você irá se alistar em {ano_atual + ((idade - 18) * -1)}')
 elif idade == 18:
-    print('Você tem {} anos, já está na hora de se alistar!'.format(idade))
+    print(f'Você tem {idade} anos, já está na hora de se alistar!')
 else:
-    print('Já passou da hora de se alistar! você tem {} anos, portanto você está {} anos atrasado'.format(idade, idade - 18))
+    print(f'Já passou da hora de se alistar! você tem {idade} anos, portanto você está {idade - 18} anos atrasado')

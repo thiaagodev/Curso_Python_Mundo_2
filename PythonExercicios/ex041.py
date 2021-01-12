@@ -6,11 +6,11 @@ idade = date.today().year - ano
 
 if idade <= 9:
     print(f'Você tem {idade} anos, portanto você é Mirim')
-elif idade > 9 and idade <= 14:
+elif idade <= 14:
     print(f'Você tem {idade} anos, portanto você é Infantil')
-elif idade > 14 and idade <= 19:
+elif idade <= 19:
     print(f'Você tem {idade} anos, portanto você é Junior')
-elif idade > 19 and idade <= 20:
+elif idade <= 25:
     print(f'Você tem {idade} anos, portanto você é Sênior')
 else:
     print(f'Você tem {idade} anos, portanto você é Master')

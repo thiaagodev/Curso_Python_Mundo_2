@@ -7,5 +7,7 @@ elif opcao == 2:
     print(f'Você escolheu pagar a vista no dinheiro, então o desconto é de 5%, valor total: R${256 - (256 * 0.05)}')
 elif opcao == 3:
     print('Preço normal: R$256')
+elif opcao == 4:
+     print(f'3x ou mais no cartão da 20% de juros, então o preço fica R${256 * 1.20}')
 else:
-    print(f'3x ou mais no cartão da 20% de juros, então o preço fica R${256 * 1.20}')
+    print(f'Essa opção não existe!')
