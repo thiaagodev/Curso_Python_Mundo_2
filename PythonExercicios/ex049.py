@@ -2,9 +2,9 @@ numero = int(input('Informe um número inteiro: '))
 
 print('A tabuada de {} é: '.format(numero))
 
-print('-' * 11)
+print('-' * 15)
 
-for i in range(0, 10, 1):
-    print('{} x {:2} = {}'.format(numero, i + 1, numero * (i + 1)))
+for i in range(0, 10):
+    print(f'{numero} x {i + 1:2} = { numero * (i + 1):3}')
 
-print('-' * 11)
+print('-' * 15)
