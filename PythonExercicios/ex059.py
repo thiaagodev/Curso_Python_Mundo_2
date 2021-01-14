@@ -1,9 +1,11 @@
+from time import sleep
+
 escolha = -1
 
-while escolha != 5:
-    num1 = int(input('Digite um número: '))
-    num2 = int(input('Digite outro: '))
+num1 = int(input('Digite um número: '))
+num2 = int(input('Digite outro: '))
 
+while escolha != 5:
     print('O que deseja fazer com esses números?')
     print('[1] Somar')
     print('[2] Multiplicar')
@@ -23,8 +25,11 @@ while escolha != 5:
             print(f'{num2} é maior que {num1}')
         else:
             print('Os dois números são iguais')
-    
-    if escolha != 4 and escolha != 5:
+    if escolha == 4:
+        num1 = int(input('Digite um número: '))
+        num2 = int(input('Digite outro: '))
+    if escolha == 5:
         sair = input('Deseja finalizar o programa? [S / N]: ').upper()
-        if sair == 'S':
-            escolha = 5
+        if sair == 'N':
+            escolha = -1
+    sleep(2)
